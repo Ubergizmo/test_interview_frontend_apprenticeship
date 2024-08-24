@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 2: DOM Interaction</title>
+  </head>
+  <body>
+    <!--L'élément html de type text à changer-->
+    <p id="myText">I will be check</p>
+    <!--Le bouton d'action-->
+    <button id="myButton">Change Text</button>
+    <script>
+      //Avec le id "myButton" je récupère le bouton et j'ajoute la fonction pour changer le text en "Hello, Check!"
+      document.getElementById("myButton").addEventListener("click", () => {
+        document.getElementById("myText").textContent = "Hello, Check!";
+      });
+    </script>
+  </body>
+</html>
