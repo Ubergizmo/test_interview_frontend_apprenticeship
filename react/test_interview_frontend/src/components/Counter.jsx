@@ -3,19 +3,19 @@
 import { useState } from "react";
 
 function Counter() {
-  //The count State
+  //Le count State
   const [count, setCount] = useState(0);
 
-  //The increment function
+  //La fonction increment
   const increment = () => {
     setCount(count + 1);
   };
 
-  //The decrement function
+  //La fonction decrement
   const decrement = () => {
     setCount(count - 1);
   };
-  
+
   return (
     <div>
       <p>Count: {count}</p>
